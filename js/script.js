@@ -3,6 +3,7 @@ function getInput(id){
     const expensesInput = document.getElementById(id);
     const expensesCost = parseFloat(expensesInput.value);
     if(isNaN(expensesCost) || expensesCost < 0){
+        expensesInput.value = '';
         return alert("Please enter valid number of money");
     }
     expensesInput.value = '';
@@ -27,14 +28,16 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     const totalBalance = totalIncome - totalExpenses;
     document.getElementById('total-balance').innerText = totalBalance;
 })
+// Saving
 document.getElementById('saving-btn').addEventListener('click', function(){
-    const totalIncome = getInput('total-income');
-    const totalBalance = document.getElementById('total-balance');
+    const totalBalance = document.getElementById('total-balance').innerText;
     const savingNumber = getInput('saving-number');
-    const savingAmount = totalIncome * (savingNumber / 100);
-    if(savingAmount > totalIncome || savingAmount < 0){
+    const savingAmount = totalBalance * (savingNumber / 100);
+    if(savingAmount > totalBalance || savingAmount < 0){
         return alert("Saving amount bigger then Income")
     }
+    const remainingBalance = totalBalance - savingAmount;
     document.getElementById('saving-amount').innerText = savingAmount;
+    document.getElementById('remaining-balance').innerText = remainingBalance;
     
 })

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header */
+.website-title{
+    color: #31A5AC;
+}
+/* Hero */
+.hero-left{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-right{
+    background: #F8F8F8;
+}
+/* Hero Input */
+.input-filed{
+    background: #DCDCDC;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    width: 60%;
+}
+.primary-btn{
+    background: #59A5FF;
+    color: #ffffff;
+    padding: 10px 40px;
+}

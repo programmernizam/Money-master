@@ -11,7 +11,80 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <!-- Header Section -->
+    <header>
+        <h1 class="text-center mt-5 fw-bold display-4 website-title ">MASTER SAVING</h1>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Section -->
+        <section class="mt-5 container">
+            <div class="row gx-5">
+                <div class="col-md-6 hero-left">
+                    
+                </div>
+                <div class="col-md-6 text-center hero-right">
+                    <h2>Income</h2>
+                    <!-- Total Income -->
+                    <div class="row my-3 align-items-center">
+                        <div class="col-md-4 text-end">
+                            <label class="fs-5">Income:</label>
+                        </div>
+                        <div class="col-md-8 text-start">
+                            <input class="input-filed" type="text" id="total-income">
+                        </div>
+                    </div>
+                    <h2>Expenses</h2>
+                    <!-- Food -->
+                    <div class="row my-3 align-items-center">
+                        <div class="col-md-4 text-end">
+                            <label class="fs-5">Food:</label>
+                        </div>
+                        <div class="col-md-8 text-start">
+                            <input class="input-filed" type="text" id="food-expenses">
+                        </div>
+                    </div>
+                    <!-- Rent -->
+                    <div class="row my-3 align-items-center">
+                        <div class="col-md-4 text-end">
+                            <label class="fs-5">Rent:</label>
+                        </div>
+                        <div class="col-md-8 text-start">
+                            <input class="input-filed" type="text" id="rent-expenses">
+                        </div>
+                    </div>
+                    <!-- Clothes -->
+                    <div class="row my-3 align-items-center">
+                        <div class="col-md-4 text-end">
+                            <label class="fs-5">Clothes:</label>
+                        </div>
+                        <div class="col-md-8 text-start">
+                            <input class="input-filed" type="text" id="clothes-expenses">
+                        </div>
+                    </div>
+                    <button id="calculate-btn" class="primary-btn btn">Calculate</button>
+                    <h2 class="my-3">Total Expenses: <span id="total-expenses">5500</span></h2>
+                    <h2 class="my-3">Balance: <span id="total-balance">4500</span></h2>
+                    <!-- Save -->
+                    <div class="row my-3 align-items-center">
+                        <div class="col-md-3 text-end">
+                            <label class="fs-5">Save:</label>
+                        </div>
+                        <div class="col-md-3 text-start">
+                            <input id="saving-number" class="input-filed w-100" type="text" id="total-income">
+                        </div>
+                        <div class="col-md-1 text-start">
+                            <span>%</span>
+                        </div>
+                        <div class="col-md-4 text-start">
+                            <button id="saving-btn" class="primary-btn btn">Save</button>
+                        </div>
+                    </div>
+                    <h2 class="my-3">Saving Amount: <span id="saving-amount">2000</span></h2>
+                    <h2 class="my-3" id="remaining-balance">Remaining Balance: <span>2500</span></h2>
+            </div>
+        </section>
+    </main>
 
 
 

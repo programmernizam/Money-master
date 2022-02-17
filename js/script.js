@@ -34,10 +34,10 @@ document.getElementById('saving-btn').addEventListener('click', function(){
     const totalIncome = document.getElementById('total-income').value;
     const savingNumber = getInput('saving-number');
     const savingAmount = totalIncome * (savingNumber / 100);
-    if(savingAmount > totalIncome || savingAmount < 0){
-        return alert("Saving amount bigger then Income")
-    }
     const totalBalance = document.getElementById('total-balance').innerText;
+    if(savingAmount > totalBalance || savingAmount < 0){
+        return alert("Saving amount bigger then Balance")
+    }
     const remainingBalance = totalBalance - savingAmount;
     document.getElementById('saving-amount').innerText = savingAmount;
     document.getElementById('remaining-balance').innerText = remainingBalance;
